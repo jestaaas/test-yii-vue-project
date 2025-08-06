@@ -4,6 +4,7 @@ namespace app\repositories;
 use app\models\Tank;
 
 class TankRepository {
+    // находим все цистерны в порядке возрастания их номера
     public function findAll(): array {
         return Tank::find()->orderBy(['id' => SORT_ASC])->all();
     }

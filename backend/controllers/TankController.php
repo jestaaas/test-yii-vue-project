@@ -36,6 +36,7 @@ class TankController extends Controller {
         return $behaviors;
     }
 
+    // обработка OPTIONS-запросов
     public function actionOptions()
     {
         \Yii::$app->response->statusCode = 200;
