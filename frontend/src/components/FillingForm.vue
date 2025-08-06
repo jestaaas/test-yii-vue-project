@@ -14,6 +14,7 @@
           v-model="form.username"
           required
           :disabled="isSubmitting"
+          maxlength="255"
         />
       </div>
       <div class="form-group">
